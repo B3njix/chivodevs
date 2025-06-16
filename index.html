@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ChivoDevs: Soluciones de automatización con inteligencia artificial en El Salvador. Optimiza tu negocio con IA personalizada.">
+  <meta name="keywords" content="automatización, inteligencia artificial, IA, El Salvador, ChivoDevs, chatbots, procesos empresariales">
+  <meta name="author" content="ChivoDevs">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="SV">
+  <meta name="geo.placename" content="San Salvador, El Salvador">
+  <title>ChivoDevs - Automatización con Inteligencia Artificial</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navbar -->
+  <nav class="bg-blue-800 text-white p-4 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold">ChivoDevs</a>
+      <button id="menu-toggle" class="md:hidden focus:outline-none" aria-label="Abrir menú">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <ul id="menu" class="hidden md:flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-300">Inicio</a></li>
+        <li><a href="#about" class="hover:text-blue-300">Acerca</a></li>
+        <li><a href="#services" class="hover:text-blue-300">Servicios</a></li>
+        <li><a href="https://chivodevs.carrd.co/" class="hover:text-blue-300">Proyectos</a></li>
+        <li><a href="#contact" class="hover:text-blue-300">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-blue-900 text-white py-12 sm:py-16 animate-fade-in">
+    <div class="container mx-auto text-center">
+      <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold mb-4">Automatiza tu Éxito con IA</h1>
+      <p class="text-base sm:text-lg mb-4">Transformamos tu negocio con soluciones de inteligencia artificial personalizadas. Ahorra tiempo y costos hoy.</p>
+      <a href="#contact" class="bg-yellow-500 text-black px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-yellow-600">Contáctanos</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-12 sm:py-16 animate-fade-in">
+    <div class="container mx-auto text-center">
+      <img src="images/team.jpg" alt="Equipo ChivoDevs" class="mx-auto mb-4 rounded-lg shadow-lg" loading="lazy">
+      <p class="text-base sm:text-lg max-w-2xl mx-auto">En ChivoDevs, somos apasionados por la tecnología. Nuestra misión es llevar la automatización con IA a cualquier empresa, ofreciendo soluciones innovadoras y adaptadas las necesidades de nuestros clientes.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-200 py-12 sm:py-16 animate-fade-in">
+    <div class="container mx-auto text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4">Nuestros Servicios</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8">
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow">
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">Chatbots Inteligentes</h3>
+          <p class="text-sm sm:text-base">Mejora la atención al cliente con asistentes impulsados por IA, disponibles 24/7.</p>
+        </div>
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow">
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">Automatización de Procesos</h3>
+          <p class="text-sm sm:text-base">Optimiza operaciones con soluciones de IA que reducen costos y tiempo.</p>
+        </div>
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow">
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">Análisis de Datos</h3>
+          <p class="text-sm sm:text-base">Toma decisiones informadas con nuestras herramientas de análisis impulsadas por IA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 sm:py-16 animate-fade-in bg-gray-50">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-6">
+      <img src="images/nordwood-themes-q8U1YgBaRQk-unsplash.jpg" alt="Contáctanos" class="w-full md:w-1/3 rounded-lg shadow-lg" loading="lazy">
+      <div class="w-full md:w-2/3 p-6 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4">Contáctanos</h2>
+        <p class="text-base sm:text-lg mb-4 text-gray-600">¿Listo para transformar tu negocio? Escríbenos y empecemos hoy.</p>
+        <form id="contactForm" class="space-y-4" action="https://script.google.com/macros/s/AKfycbzc5A7wg4di4LH7rSS7XpFDTTpMxCYMf8xfTYYSxHe06KIjLsTz4tjrg5YI8LTgpnHZag/exec" method="POST" onsubmit="submitForm(event)">
+          <div>
+            <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+            <input type="text" id="nombre" name="Nombre" placeholder="Tu nombre" class="w-full p-2 border rounded mt-1" required>
+          </div>
+          <div>
+            <label for="correo" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+            <input type="email" id="correo" name="Correo" placeholder="tu@email.com" class="w-full p-2 border rounded mt-1" required>
+          </div>
+          <div>
+            <label for="telefono" class="block text-sm font-medium text-gray-700">Teléfono</label>
+            <input type="tel" id="telefono" name="Telefono" placeholder="+50312345678" class="w-full p-2 border rounded mt-1" title="Formato: +503 seguido de 8 dígitos (sin espacios)">
+            <p class="text-xs text-gray-500 mt-1">Opcional. Use +503 seguido de 8 dígitos, sin espacios.</p>
+          </div>
+          <div>
+            <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
+            <textarea id="mensaje" name="Mensaje" placeholder="Escribe tu mensaje" class="w-full p-2 border rounded mt-1" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition-colors">Enviar</button>
+          <div id="responseMessage" class="mt-4 text-center hidden" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-12 sm:pt-16 pb-6 sm:pb-8">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start">
+      <div class="mb-6 md:mb-0">
+        <h3 class="text-xl font-bold text-blue-400 mb-4">ChivoDevs</h3>
+        <p class="text-gray-300 mb-4">Especialistas en automatización con IA, n8n y desarrollo de soluciones innovadoras para empresas.</p>
+        <div class="social-links flex space-x-4">
+          <a href="https://www.facebook.com/chivodevs" class="text-gray-300 hover:text-purple-300 transition-colors" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook" lang="es">
+              <title>Facebook</title>
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/chivodevs" class="text-gray-300 hover:text-purple-300 transition-colors" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram" lang="es">
+              <title>Instagram</title>
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://wa.me/50369642651" class="text-gray-300 hover:text-purple-300 transition-colors" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <title>WhatsApp</title>
+              <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>
+          </a>
+          <a href="mailto:chivodevs.com@ud.me" class="text-gray-300 hover:text-purple-300 transition-colors" aria-label="Gmail" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" lang="es">
+              <title>Gmail</title>
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.1 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div class="mb-6 md:mb-0">
+        <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
+        <ul class="space-y-2">
+          <li><a href="#home" class="text-gray-300 hover:text-white transition-colors">Inicio</a></li>
+          <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">Servicios</a></li>
+        </ul>
+      </div>
+      <!-- Services -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Servicios</h3>
+        <ul class="space-y-2">
+          <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">Automatización con IA</a></li>
+          <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">Flujos de procesos con n8n</a></li>
+          <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">Desarrollo a medida</a></li>
+          <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">Optimización de Procesos</a></li>
+          <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">Integración de sistemas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 ChivoDevs. Todos los derechos reservados.</p>
+        <div class="actions flex gap-6">
+          <a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">Política de privacidad</a>
+          <a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">Términos y condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menú hamburguesa
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      document.getElementById('menu').classList.toggle('active');
+    });
+
+    async function submitForm(event) {
+      event.preventDefault();
+      const form = event.target;
+      const formData = new FormData(form);
+      const responseMessage = document.getElementById('responseMessage');
+      const telefono = (form.querySelector('#telefono').value || '').replace(/\s/g, '');
+
+      // Debug: Log form data
+      for (let [key, value] of formData.entries()) {
+        console.log(key + ': ' + value);
+      }
+
+      // Client-side phone validation (only if provided)
+      const phoneRegex = /^\+503[0-9]{8}$/;
+      if (telefono && !phoneRegex.test(telefono)) {
+        responseMessage.classList.remove('hidden', 'text-green-500');
+        responseMessage.classList.add('text-red-500');
+        responseMessage.textContent = 'El número de teléfono debe seguir el formato +503 seguido de 8 dígitos (sin espacios).';
+        return;
+      }
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData
+        });
+        const result = await response.json();
+
+        if (result.result === 'success') {
+          responseMessage.classList.remove('hidden', 'text-red-500');
+          responseMessage.classList.add('text-green-500');
+          responseMessage.textContent = '¡Mensaje enviado con éxito!';
+          form.reset();
+        } else {
+          responseMessage.classList.remove('hidden', 'text-green-500');
+          responseMessage.classList.add('text-red-500');
+          responseMessage.textContent = 'Error al enviar el mensaje: ' + result.error;
+        }
+      } catch (error) {
+        responseMessage.classList.remove('hidden', 'text-green-500');
+        responseMessage.classList.add('text-red-500');
+        responseMessage.textContent = 'Error de red: ' + error.message;
+      }
+    }
+  </script>
+</body>
+</html>
